@@ -2,7 +2,6 @@
 GLASSFISH_DIR=/usr/lib/jvm/glassfish4
 export TERM="xterm-256color"
 
-
 for domain in $GLASSFISH_DIR/glassfish/domains/*;
     do
         $GLASSFISH_DIR/bin/asadmin stop-domain $(basename $domain)
